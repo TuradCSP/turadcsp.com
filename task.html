@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>TASK-1</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turad Ahmed | Luminous Centre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #5a7d75; /* Dark Greenish-Grey from your image */
+            --sky-blue: #00a8e8;
+            --white: #ffffff;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            background: var(--white);
+        }
+        .logo { font-weight: bold; font-size: 1.2rem; color: var(--primary-bg); }
+        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; }
+        nav ul li a { text-decoration: none; color: #cc3333; font-weight: 500; transition: 0.3s; }
+        nav ul li a:hover { color: var(--sky-blue); }
+        .sign-in-btn { border: 1px solid #333; padding: 5px 15px; border-radius: 5px; text-decoration: none; color: #333; font-size: 0.9rem; }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-bg);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            gap: 40px;
+        }
+        .hero-content { flex: 1; }
+        .hero-content h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero-content p { font-size: 1rem; opacity: 0.9; margin-bottom: 30px; line-height: 1.6; }
+        .hero-btn { background: var(--white); color: #333; padding: 10px 25px; border-radius: 20px; text-decoration: none; font-size: 0.9rem; }
+
+        .hero-image { flex: 1; text-align: right; }
+        .hero-image img { width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+        /* Services/Courses Section */
+        .services {
+            padding: 80px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+        .card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 20px;
+            transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card h3 { margin: 20px 0 10px; color: var(--text-dark); }
+        .card p { font-size: 0.9rem; color: #666; padding: 0 20px; margin-bottom: 20px; }
+        .learn-more { font-size: 0.8rem; text-decoration: underline; color: #333; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-image { order: -1; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">LUMINOUS CENTRE</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="sign-in-btn">Sign In</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>luminous centre</h1>
+            <p>Hi, I am Turad Ahmed. I am currently a 4th-year BBA student majoring in Finance and Banking. I specialize in Web Design and Development. I am offering small web page design services for free to help you build your digital presence.</p>
+            <a href="mailto:turadahmed2003@gmail.com" class="hero-btn">Click here..</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Web Design Image">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563dc4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Web Design">
+            <h3>Web Design</h3>
+            <p>Providing high-quality professional web design services based on your requirements.</p>
+            <a href="#" class="learn-more">learn moer..</a>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581291518062-c13f277359d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Web Design">
+            <h3>Web Design</h3>
+            <p>Finance-oriented UI/UX designs for better business conversions and growth.</p>
+            <a href="#" class="learn-more">learn moer..</a>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Web Design">
+            <h3>Web Design</h3>
+            <p>Contact me at 01540351945 for a free consultation on your next web project.</p>
+            <a href="#" class="learn-more">learn moer..</a>
+        </div>
+    </section>
+
+</body>
+</html>
